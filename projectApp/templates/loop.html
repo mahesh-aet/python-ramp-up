@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>loop</title>
+  </head>
+  <body>
+    <h1>{{data}}</h1>
+    <p>even numbers :</p>
+    <ul>
+      {% for num in list %} {% if num|divisibleby:2 %}
+      <li>{{num}}</li>
+      {%endif%} {%endfor%}
+    </ul>
+  </body>
+</html>
